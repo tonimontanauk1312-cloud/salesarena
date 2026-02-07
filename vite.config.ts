@@ -21,7 +21,7 @@ function copyIndexTo404() {
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "./",
+  base: "/salesarena/",
   server: {
     host: "::",
     port: 8080,
