@@ -21,15 +21,14 @@ function copyIndexTo404() {
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/salesarena/",
+  base: "./",
   server: {
     host: "::",
     port: 8080,
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === "development" && componentTagger(),
     copyIndexTo404(),
   ].filter(Boolean),
   resolve: {
