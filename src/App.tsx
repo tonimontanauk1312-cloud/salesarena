@@ -20,7 +20,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <NotificationSystem />
-      <BrowserRouter>
+      <BrowserRouter basename="/salesarena">
         <Routes>
           <Route path="/" element={
             <ProtectedRoute>
